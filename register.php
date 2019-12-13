@@ -5,7 +5,7 @@
         //Define variables and initialize with empty values
         $username = $password = $confirm_password = "";
         $username_err = $password_err = $confirm_password_err = "";
-        $num_rows = "";
+        
 
         //Processing form data when form is submitted
         if($_SERVER["REQUEST_METHOD"] == "POST"){
