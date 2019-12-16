@@ -122,7 +122,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has error' : ''; ?>"></div>
                     <div class="form-group">
                         <label for="">Username or Email address</label>
-                        <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo username; ?>">
+                        <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
                         <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
@@ -131,7 +131,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     <div class="form-group <?php echo (!empty($password_err)) ? 'has error' : ''; ?>"></div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="" placeholder="Password" value="password">
+                        <input type="password" class="form-control" id="" placeholder="Password" value="<?php echo $password ?>">
                     </div>
                     <div class="form-group">
                         <?php echo $username_err; ?>
