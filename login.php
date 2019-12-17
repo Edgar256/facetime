@@ -134,14 +134,13 @@
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
-                        <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input type="text" class="form-control"  placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
                     </div>
                     <div class="form-group"><?php echo $username_err; ?></div>
                     <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
                     <div class="form-group">
                         <label for="">Password</label>
-                        <input type="password" class="form-control" id="" placeholder="Password" name="password" value="<?php echo $password; ?>">
+                        <input type="password" class="form-control"  placeholder="Password" name="password" value="<?php echo $password; ?>">
                     </div>
                     <div class="form-group"><?php echo $password_err; ?></div>              
                     <input type="submit" class="btn btn-primary" value="Login">

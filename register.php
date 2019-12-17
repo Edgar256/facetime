@@ -133,7 +133,7 @@
                     </div>
                     <div class="form-group <?php echo (!empty($password_err)) ? 'has error' : ''; ?>"></div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
+                        <label for="">Password</label>
                         <input type="password" class="form-control" id="" placeholder="Password" value="<?php echo $password ?>" name="password">
                     </div>
                     <div class="form-group">
@@ -141,7 +141,7 @@
                     </div>
                     <div class="form-group <?php echo (!empty($confirm_password)) ? 'has error' : ''; ?>"></div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <label for="">Confirm Password</label>
                         <input type="password" class="form-control" id="" placeholder="Confirm Password" value="<?php echo $confirm_password; ?>" name="confirm_password">
                     </div>
                     <div class="form-group">
