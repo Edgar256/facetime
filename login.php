@@ -114,13 +114,10 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"><h3>Please login here</h3></div>
-            <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4" style="background-color: #2e3740;">Logo</div>
             <div class="col-sm-4">
+                <h3>Please login here</h3>
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" METHOD="post">
                     
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -139,7 +136,7 @@
                     <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
                 </form>
             </div> 
-            <div class="col-sm-4"></div>
+            <div class="col-sm-2"></div>
         </div>       
     </div>  
 </body>
