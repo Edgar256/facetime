@@ -4,9 +4,9 @@
     session_start();
 
     //Check if user is logedin, not not then user is redirected to the login page
-    if(isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true ){
+    if(!isset($_SESSION["id"]) || !isset($_SESSION["username"])){
         header("location: login.php");
-        exit;
+        exit();
     }
 
 

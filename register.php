@@ -96,18 +96,8 @@
     }
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FACETIME APP</title>
+<?php include 'header.php' ?>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-</head>
 <body>
 
     
@@ -122,31 +112,26 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <div class="form-group <?php echo (!empty($username_err)) ? 'has error' : ''; ?>"></div>
-                    <div class="form-group">
+                    
+                    <div class="form-group <?php echo (!empty($username_err)) ? 'has error' : ''; ?>">
                         <label for="">Username or Email address</label>
                         <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
-                        <small id="" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <span class="help"><?php echo $username_err; ?></span>
                     </div>
-                    <div class="form-group">
-                        <?php echo $username_err; ?>
-                    </div>
-                    <div class="form-group <?php echo (!empty($password_err)) ? 'has error' : ''; ?>"></div>
-                    <div class="form-group">
+
+                    <div class="form-group <?php echo (!empty($password_err)) ? 'has error' : ''; ?>">
                         <label for="">Password</label>
                         <input type="password" class="form-control" id="" placeholder="Password" value="<?php echo $password ?>" name="password">
+                        <span class="help"><?php echo $username_err; ?></span>
                     </div>
-                    <div class="form-group">
-                        <?php echo $username_err; ?>
-                    </div>
-                    <div class="form-group <?php echo (!empty($confirm_password)) ? 'has error' : ''; ?>"></div>
-                    <div class="form-group">
+                    
+                    <div class="form-group <?php echo (!empty($confirm_password)) ? 'has error' : ''; ?>">
                         <label for="">Confirm Password</label>
                         <input type="password" class="form-control" id="" placeholder="Confirm Password" value="<?php echo $confirm_password; ?>" name="confirm_password">
+                        <span class="help"><?php echo $confirm_password_err; ?></span>
                     </div>
-                    <div class="form-group">
-                        <?php echo $confirm_password_err; ?>
-                    </div>
+                    
                     <!-- <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>

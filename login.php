@@ -4,7 +4,7 @@
     session_start();
 
     //Check if the user is already logged in, if yes then redirect hi to the welcome page
-    if(isset($_SESSION["loggedin"]) && $_SESSION["loggenin"] === true){
+    if(isset($_SESSION["id"]) && $_SESSION["username"] === true){
         header("location: welcome.php");
         exit;
     }
@@ -30,7 +30,7 @@
         if(empty(trim($_POST["password"]))){
             $password = "Please submit password";
         }else{
-            $username = trim($_POST["password"]);
+            $password = trim($_POST["password"]);
         }
 
         //Validate Credentials
@@ -41,6 +41,8 @@
             $sql = "SELECT id, username, password FROM users WHERE username = ?";
 
         }
+
+        global $sql;
 
         if($stmt = $mysqli->prepare($sql)){
 
@@ -65,10 +67,10 @@
                         if(password_verify($password, $hashed_password)){
                             
                             //pasword is correct so start session
-                            session_start();
+                            //session_start();
 
                             //Store data in session varaibles
-                            $SESSION["loggedin"] = true;
+                            //$SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
 
@@ -85,7 +87,7 @@
                 }else{
 
                     //Display error message if username doesnot exist
-                    $username_err = "No account found with that usernae";
+                    $username_err = "No account found with that username";
 
                 }
 
@@ -96,7 +98,7 @@
         }
 
         //Close Statement
-        $stmt->close();
+        //$stmt->close();
 
     }
 
@@ -104,19 +106,8 @@
 ?>
 
 
+<?php include 'header.php' ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FACETIME APP</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-</head>
 <body>
 
     
@@ -131,18 +122,19 @@
             <div class="col-sm-4"></div>
             <div class="col-sm-4">
                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" METHOD="post">
+                    
                     <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                    <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="text" class="form-control"  placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
+                        <span class="help"><?php echo $username_err; ?></span>
                     </div>
-                    <div class="form-group"><?php echo $username_err; ?></div>
+                    
                     <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                    <div class="form-group">
                         <label for="">Password</label>
                         <input type="password" class="form-control"  placeholder="Password" name="password" value="<?php echo $password; ?>">
+                        <span class="help"><?php echo $password_err; ?></span>
                     </div>
-                    <div class="form-group"><?php echo $password_err; ?></div>              
+                                  
                     <input type="submit" class="btn btn-primary" value="Login">
                     <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
                 </form>
