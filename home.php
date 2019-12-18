@@ -25,8 +25,14 @@
                 <?php include("./create-post.php") ?>
                 
                 <?php include("./user-post.php") ?>
+                <?php include("./user-post.php") ?>
+                <?php include("./user-post.php") ?>
+                <?php include("./user-post.php") ?>
             </div>
-            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+                <div>One of your pages</div>
+                <div>People you may know</div>
+            </div>
         </div>
     </body>
 </html>

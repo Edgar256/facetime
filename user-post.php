@@ -37,5 +37,5 @@
           Share
         </button>
       </span>
-    <div> 
+	</div> 
 </div>
