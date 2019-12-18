@@ -14,6 +14,53 @@ body{
     font-size: 12px;
     padding: 5px 5px;
 }
+.create-post{
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0 1px 8px 0 rgba(32, 33, 36, 0.18);
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+.create-post div:nth-child(1){
+    padding: 5px;
+    background-color: #f0f0f0;
+}
+.create-post div:nth-child(2){
+    padding: 25px;
+}
+.create-post div:nth-child(2) input{
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    width: 75%;
+}
+.create-post div:nth-last-child(1){
+    padding: 5px;
+}
+.create-post hr{
+    margin: 10px 5px;
+}
+
+.create-post div img{
+    width: 55px;
+    border-radius: 40px;
+}
+.create-post div span .btn{
+    border-radius: 30px;
+}
+.user-post{
+    margin: 5px 0px;
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0 1px 8px 0 rgba(32, 33, 36, 0.18);
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
 .menu-tile:hover{
     background-color: #f9f9f9;
     border: 1px solid #d6d6d6;
@@ -52,4 +99,34 @@ body{
 }
 .fill-available{
     width: -webkit-fill-available;
+}
+.user-post div span img{
+    width: 55px;
+    border-radius: 40px;
+}
+.user-post div span:nth-child(2){
+    padding: 5px;
+    line-height: 1.2em; 
+}
+.user-post div:nth-child(1){
+    display: flex;
+    padding: 10px 10px 0px 10px;
+}
+.user-post-icons{
+    display: flex;
+    padding: 10px 10px 0px 10px;
+}
+.user-post-icons span{
+    width: 33.3%;
+    text-align: center;
+}
+.user-post hr{
+    margin: 0px 0px 5px 0px;
+}
+.user-post div img{
+    width: 100%;
+    margin: 0px;
+}
+.user-post div:nth-child(2){
+    padding: 10px 10px;
 }

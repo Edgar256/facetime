@@ -22,7 +22,9 @@
                 <?php include('./menu.php') ?>
             </div>
             <div class="col-sm-7">
-                <p><?php echo $_SESSION["username"]; ?>'s post  will go here</p>
+                <?php include("./create-post.php") ?>
+                
+                <?php include("./user-post.php") ?>
             </div>
             <div class="col-sm-3"></div>
         </div>
