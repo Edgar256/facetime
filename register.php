@@ -104,42 +104,44 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4"><h3>Please register here</h3></div>
-            <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    
-                    <div class="form-group <?php echo (!empty($username_err)) ? 'has error' : ''; ?>">
-                        <label for="">Username or Email address</label>
-                        <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
-                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        <span class="help"><?php echo $username_err; ?></span>
-                    </div>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 login-wrapper">
+                <div class="col-sm-6 login-left">
+                    <h2>Welcome to Facetime</h2>
+                    <h4>Connect. Interact. Live</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Please register here</h3>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                        
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has error' : ''; ?>">
+                            <label for="">Username or Email address</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
+                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <span class="help"><?php echo $username_err; ?></span>
+                        </div>
 
-                    <div class="form-group <?php echo (!empty($password_err)) ? 'has error' : ''; ?>">
-                        <label for="">Password</label>
-                        <input type="password" class="form-control" id="" placeholder="Password" value="<?php echo $password ?>" name="password">
-                        <span class="help"><?php echo $username_err; ?></span>
-                    </div>
-                    
-                    <div class="form-group <?php echo (!empty($confirm_password)) ? 'has error' : ''; ?>">
-                        <label for="">Confirm Password</label>
-                        <input type="password" class="form-control" id="" placeholder="Confirm Password" value="<?php echo $confirm_password; ?>" name="confirm_password">
-                        <span class="help"><?php echo $confirm_password_err; ?></span>
-                    </div>
-                    
-                    <!-- <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> -->
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                </form>
+                        <div class="form-group <?php echo (!empty($password_err)) ? 'has error' : ''; ?>">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control" id="" placeholder="Password" value="<?php echo $password ?>" name="password">
+                            <span class="help"><?php echo $username_err; ?></span>
+                        </div>
+                        
+                        <div class="form-group <?php echo (!empty($confirm_password)) ? 'has error' : ''; ?>">
+                            <label for="">Confirm Password</label>
+                            <input type="password" class="form-control" id="" placeholder="Confirm Password" value="<?php echo $confirm_password; ?>" name="confirm_password">
+                            <span class="help"><?php echo $confirm_password_err; ?></span>
+                        </div>
+                        
+                        <!-- <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div> -->
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </form>
+                </div>
             </div> 
-            <div class="col-sm-4"></div>
+            <div class="col-sm-2"></div>
         </div>       
     </div>  
 </body>
