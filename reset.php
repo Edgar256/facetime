@@ -4,9 +4,9 @@
     session_start();
 
     //Check if user is logged in, if not then redirect to the login page
-    if(!isset($_SESSION["loggenin"])  || $_SESSION["loggedin"] !== true){
+    if(!isset($_SESSION["id"])  || !isset($_SESSION["username"])){
         header("location: login.php");
-        exit;
+        exit();
     }
 
     //include config file
@@ -73,20 +73,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 ?>
 
+<?php include('header.php') ?>
 
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FACETIME APP</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-</head>
 <body>  
 
     <div class="container">
