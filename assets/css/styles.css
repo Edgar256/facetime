@@ -130,3 +130,55 @@ body{
 .user-post div:nth-child(2){
     padding: 10px 10px;
 }
+.user-post-icons span .btn{
+    width: 100%;
+    background-color: #ffffff;
+}
+.my-page{
+    margin: 5px 0px;
+    background-color: #fff;
+    padding: 0px;
+    box-shadow: 0 1px 8px 0 rgba(32, 33, 36, 0.18);
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+.my-page-details{
+    display: inline-flex;
+    font-size: 12px;
+    line-height: 2.0em;
+}
+.my-page-image{
+    width: 100%;
+}
+.my-page-details span:nth-child(1){
+    width: 35%;
+    padding: 5px;
+}
+.my-page-details span:nth-child(2){
+    width: 65%;
+    padding: 5px;
+    line-height: 1.6em;
+}
+.my-page-icons{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+}
+.my-page-icons span{
+    width: 25%;
+}
+.my-page hr{
+    margin: 7px 5px;
+}
+.my-page-likes{
+    text-align: center;
+}
+.my-page .btn-group{
+    width: 95%;
+    display: inline-flex;
+    margin: 0px 10px 0px 10px
+}
+.my-page .btn-group .btn{
+    width: 33%;
+}
