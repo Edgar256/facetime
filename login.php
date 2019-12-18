@@ -113,29 +113,34 @@
     
 
     <div class="container">
-        <div class="row">
+        <div class="row login-main">
             <div class="col-sm-2"></div>
-            <div class="col-sm-4" style="background-color: #2e3740;">Logo</div>
-            <div class="col-sm-4">
-                <h3>Please login here</h3>
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" METHOD="post">
-                    
-                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="text" class="form-control"  placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
-                        <span class="help"><?php echo $username_err; ?></span>
-                    </div>
-                    
-                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                        <label for="">Password</label>
-                        <input type="password" class="form-control"  placeholder="Password" name="password" value="<?php echo $password; ?>">
-                        <span class="help"><?php echo $password_err; ?></span>
-                    </div>
-                                  
-                    <input type="submit" class="btn btn-primary" value="Login">
-                    <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
-                </form>
-            </div> 
+            <div class="col-sm-8 login-wrapper">
+                <div class="col-sm-6 login-left">
+                    <h2>Welcome back to Facetime</h2>
+                    <h4>Connect. Interact. Live</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Please login here</h3>
+                    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" METHOD="post">
+                        
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="text" class="form-control"  placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
+                            <span class="help"><?php echo $username_err; ?></span>
+                        </div>
+                        
+                        <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                            <label for="">Password</label>
+                            <input type="password" class="form-control"  placeholder="Password" name="password" value="<?php echo $password; ?>">
+                            <span class="help"><?php echo $password_err; ?></span>
+                        </div>
+                                    
+                        <input type="submit" class="btn btn-primary" value="Login">
+                        <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+                    </form>
+                </div> 
+            </div>
             <div class="col-sm-2"></div>
         </div>       
     </div>  

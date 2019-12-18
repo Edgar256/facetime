@@ -14,18 +14,7 @@
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>FACETIME APP</title>
-
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	
-</head>
+<?php include('header.php') ?>
 <body>
 
     
@@ -33,16 +22,23 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><h3>Please login here</h3></div>
+            
             <div class="col-sm-4"></div>
         </div>
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4">
-                <p>Welcome back  <b><i><?php echo htmlspecialchars($_SESSION["username"])  ?></i></b></p>
+            <div class="col-sm-4 login-wrapper">
+                <h3 class="center-text">Welcome back  <b><i><?php echo htmlspecialchars($_SESSION["username"])  ?></i></b></h3><br><br>
+                <p></i></b></p>
                 <div class="col-sm-12">
-                    <a href="reset.php" class="btn btn-success">RESET PASSWORD</a>
-                    <a href="logout.php" class="btn btn-danger">LOGOUT</a>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5">
+                        <a href="reset.php" class="btn btn-success fill-available">RESET</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <a href="logout.php" class="btn btn-danger fill-available">LOGOUT</a>
+                    </div>
+                    <div class="col-sm-1"></div>                    
                 </div> 
             </div> 
             <div class="col-sm-4"></div>

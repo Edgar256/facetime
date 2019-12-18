@@ -1,4 +1,7 @@
-.has-error .help{
+
+body{
+    background-color: rgba(150, 34, 245, 0.07);
+}.has-error .help{
     color: #fd0202;
     -webkit-animation: cssAnimation 5s forwards; 
     animation: cssAnimation 3s forwards;
@@ -12,4 +15,28 @@
     0%   {opacity: 1;}
     90%  {opacity: 1;}
     100% {opacity: 0;}
+}
+.login-left{
+    background-color: #2e3740;
+    color: #ffffff;
+    border-radius: 5px 0px 0px 5px;
+}
+.login-wrapper{
+    border: 1px solid #e5e5e5;
+    padding: 0px;
+    border-radius: 5px;
+    margin: 140px auto;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    background-color: #fff;
+}
+.login-main{
+    /* background-image: url('../images/default-pic.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center-text{
+    text-align: center;
+}
+.fill-available{
+    width: -webkit-fill-available;
 }
