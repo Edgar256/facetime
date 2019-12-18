@@ -80,12 +80,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="container">
         <div class="row">
             <div class="col-sm-4"></div>
-            <div class="col-sm-4"><h3>Please login here</h3></div>
-            <div class="col-sm-4"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4"></div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 login-wrapper pad-15">
+            <h3 class="center-text">Please reset your password</h3>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" METHOD="post">
                     <div class="form-group <?php echo (!empty($new_password_err)) ? 'has-error' : ''; ?>">
                     <div class="form-group">
