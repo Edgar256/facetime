@@ -12,7 +12,7 @@
 
 ?>
 
-<?php include('header.php') ?>
+<?php include('./components/header.php') ?>
 <body>
 
     

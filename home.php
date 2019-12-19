@@ -14,24 +14,24 @@
 
 ?>
 
-<?php include('header.php') ?>
+<?php include('./components/header.php') ?>
     <body>   
         <div class="container">
         
             <div class="col-sm-2">
-                <?php include('./menu.php') ?>
+                <?php include('././components/menu.php') ?>
             </div>
             <div class="col-sm-7">
-                <?php include("./create-post.php") ?>
+                <?php include("./components/create-post.php") ?>
                 
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
-                <?php include("./user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
+                <?php include("././components/user-post.php") ?>
 
             </div>
             <div class="col-sm-3">
