@@ -266,3 +266,11 @@ body{
     bottom: 0;
     position: fixed; 
 }
+.menu-tab{
+    background-color: #2e3740;
+    color: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin: 0 -5px;
+}

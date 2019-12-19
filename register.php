@@ -116,7 +116,7 @@
                         
                         <div class="form-group <?php echo (!empty($username_err)) ? 'has error' : ''; ?>">
                             <label for="">Username or Email address</label>
-                            <input type="text" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
+                            <input type="email" class="form-control" id="" placeholder="Enter email or username" name="username" value="<?php echo $username; ?>">
                             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                             <span class="help"><?php echo $username_err; ?></span>
                         </div>
