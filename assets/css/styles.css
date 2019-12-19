@@ -1,7 +1,11 @@
 
 body{
     background-color: rgba(150, 34, 245, 0.07);
-}.has-error .help{
+}
+.home-container{
+    width: 1345px;
+}
+.has-error .help{
     color: #fd0202;
     -webkit-animation: cssAnimation 5s forwards; 
     animation: cssAnimation 3s forwards;
@@ -208,4 +212,57 @@ body{
 }
 .my-page .btn-group .btn-secondary{
     font-size: 12px;
+}
+.page-tab, 
+.message-contact-tab{
+    width: 100%;
+    display: flex;
+}
+.page-tab-image{
+    width: 20%;
+}
+.page-tab-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+.page-tab-name{
+    width: 70%;
+    padding: 10px 10px 0px 10px;
+    font-size: 12px;
+}
+.message-contact-tab-image{
+    width: 20%;
+}
+.message-contact-tab-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+.message-contact-tab-name{
+    width: 70%;
+    padding: 10px 10px 0px 10px;
+    font-size: 12px;
+}
+.dot-green{
+    background-color: #42b72a;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 15px 0px 10px 0px
+}
+.side-messages-area{
+    /* overscroll-behavior: contain;
+    height: 600px;
+    overflow: hidden; */
+    position: fixed;
+    top: 0px;
+    right: 0;
+    border-left: 1px solid #c0c0c0;
+}
+/* .side-menu-wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+} */
+.search-message-list{
+    bottom: 0;
+    position: fixed; 
 }
