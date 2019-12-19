@@ -52,6 +52,11 @@ body{
 }
 .create-post div span .btn{
     border-radius: 30px;
+    font-size: 12px;
+}
+.create-post div .btn{
+    font-size: 12px;
+    background-color: #f0f0f0;
 }
 .user-post{
     margin: 5px 0px;
@@ -133,6 +138,7 @@ body{
 .user-post-icons span .btn{
     width: 100%;
     background-color: #ffffff;
+    font-size: 12px;
 }
 .my-page{
     margin: 5px 0px;
@@ -181,4 +187,25 @@ body{
 }
 .my-page .btn-group .btn{
     width: 33%;
+}
+.my-page-dropdown-item{
+    display: flex;
+}
+.my-page-dropdown-menu{
+    min-width: 136px;
+    margin: 2px 0 0 -110px;
+    font-size: 85%;
+}
+.btn-promotion{
+    width: 100% !important;
+}
+.my-page-btn-group{
+    margin: 0px 10px 10px 10px !important;
+}
+.my-page-btn-down{
+    width: auto !important;
+    margin-right: 0px !important;
+}
+.my-page .btn-group .btn-secondary{
+    font-size: 12px;
 }
