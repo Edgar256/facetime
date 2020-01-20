@@ -11,8 +11,8 @@
             <div class="col-sm-2"></div>
             <div class="col-sm-8 login-wrapper">
                 <div class="col-sm-4">
-                    <a href="#"><div class="menu-tab"> My Profile</div></a>
-                    <a href="#"><div class="menu-tab"> Messagese</div></a>
+                    <a href="my-profile"><div class="menu-tab"> My Profile</div></a>
+                    <a href="messages"><div class="menu-tab"> Messages</div></a>
                     <a href="#"><div class="menu-tab"> Friends</div></a>
                     <a href="#"><div class="menu-tab"> Followers</div></a>
                     <a href="#"><div class="menu-tab"> Photos</div></a>
@@ -54,13 +54,42 @@
                                         <option>Day</option>
                                         <option>1</option>
                                         <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        <option>13</option>
+                                        <option>14</option>
+                                        <option>15</option>
+                                        <option>16</option>
+                                        <option>17</option>
+                                        <option>18</option>
+                                        <option>19</option>
+                                        <option>20</option>
+                                        <option>21</option>
+                                        <option>22</option>
+                                        <option>23</option>
+                                        <option>24</option>
+                                        <option>25</option>
+                                        <option>26</option>
+                                        <option>27</option>
+                                        <option>28</option>
+                                        <option>29</option>
+                                        <option>30</option>
+                                        <option>31</option>
                                     </select>
                                 </span>
                                 <span class="col-sm-4">
                                     <select class="form-control">
                                         <option>Month</option>
                                         <option>January</option>
-                                        <option>Febuary</option>
+                                        <option>February</option>
                                         <option>March</option>
                                         <option>April</option>
                                         <option>May</option>
